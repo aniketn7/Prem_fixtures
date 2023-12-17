@@ -1,0 +1,113 @@
+#request-fixtures-header {
+    text-align: center;
+    margin: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+
+#timez-select {
+    width: 65%;
+}
+
+.col-auto {
+    margin:10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+}
+
+
+#num-fixtures {
+    width: 30%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+#timez-fieldset {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+   
+}
+
+#num-games-fieldset {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+#teams-fieldset {
+    padding: 10px;
+    margin: 5px;
+}
+
+.fix-res-header {
+    margin: 20px;
+    text-align: center;
+}
+
+
+#request-fixtures-btn {
+    margin-top: 20px;
+}
+
+#save-fixtures-btn {
+    margin: 10px;
+}
+
+#show-fixtures-btn {
+    margin: 10px;
+}
+
+.save-btn {
+    margin: 10px;
+}
+
+.table-container {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.fixture-res-table {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#save-fix-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+#deleted-header {
+    margin: 20px;
+    text-align: center;
+}
+
+#home-header {
+    margin: 20px;
+    text-align: center;
+}

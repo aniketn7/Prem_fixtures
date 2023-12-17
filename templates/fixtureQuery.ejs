@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Prem Fixtures</title>
+</head>
+<body>
+    <h2 id="request-fixtures-header">Request Upcoming Fixtures</h2>
+    <div class="form-container">
+        <form class="row gy-2 gx-3 " action="/queryFixtures" id="fixture-query-form", method="post">
+            <div class="col-auto" id="team-select-div">
+                <fieldset id="teams-fieldset">
+                    <legend style="text-align: center;">Team</legend>
+                    <%- teamSelector %>
+                </fieldset>
+            </div>
+            <div class="col-auto" id="timez-select-div">
+                <fieldset id="timez-fieldset">
+                    <legend>Time Zone</legend>
+                    <select name="timeZSelector" id="timez-select" class="form-select" aria-label="Default select example">
+                        <%- timeZSelector %>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="col-auto" id="num-games-div">
+                <fieldset id="num-games-fieldset">
+                    <legend>Number of upcoming fixtures desired</legend>
+                    <input name="numFixturesSelector" type="number" id="num-fixtures" class="form-control" aria-describedby="num-fixtures-disclosure">
+                    <span id="num-fixtures-disclosure" class="form-text">
+                        If the number provided exceeds the number of scheduled fixtures for the selected team, no results will be returned.
+                    </span>
+                </fieldset>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto" style="display: flex; justify-content: center;">
+                <button id="request-fixtures-btn" class="btn btn-outline-dark" type="submit">Request Fixtures</button>
+                <button class="btn btn-outline-dark save-btn" type="button" onclick="window.location.href='/'">Home</button>
+            </div>
+              
+        </form>
+    </div>
+    
+
+    
+
+    
+    
+</body>
+</html>
